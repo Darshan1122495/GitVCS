@@ -15,7 +15,7 @@ public class AccountTriggerHandler {
                 updateAccounts.add(con);
             }
         }
-        if(updateAccounts.size() > 0){
+        if(updateAccounts != null){
             update updateAccounts;
         }
     }
