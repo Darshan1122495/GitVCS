@@ -20,7 +20,7 @@ public class CaseTriggerHandler {
                 newAcc.add(acc);
             }
         }
-        if(newAcc.size()>0){
+        if(newAcc != null){
             update newAcc;
         }
     }
