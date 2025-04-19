@@ -1,4 +1,4 @@
-//TestPr
+//PRtest
 public class CaseTriggerHandler {
     public static void updateAccountDescription(List<Case> caseList, Map<Id, Case> caseMap){
         Set<Id> ids = new Set<id>();
