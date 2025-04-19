@@ -25,7 +25,7 @@ public class CaseTriggerHandler {
             update newAcc;
         }
     }
-    
+    //updateRating
     public static void updateAccountRating(List<Case> caseList, Map<Id, Case> caseMap){
         Set<Id> ids = new Set<Id>();
         for(Case css:caselist){
