@@ -9,13 +9,13 @@ public class CaseTriggerHandler {
             }
         }
         
-        Map<Id, Account> accountMap = new Map<Id, Account>([select id, description from account where id in:ids]);
+        Map<Id, Account> accountMap2 = new Map<Id, Account>([select id, description from account where id in:ids]);
             
         List<Account> newAcc = new List<Account>();            
         
         for(Case cas : case1){
-            if(accountMap.containskey(cas.AccountId)){
-                Account acc = accountMap.get(cas.AccountId);
+            if(accountMap2.containskey(cas.AccountId)){
+                Account acc = accountMap2.get(cas.AccountId);
                     acc.Description = cas.CaseNumber+ 'Status' +cas.status;
                 newAcc.add(acc);
             }
