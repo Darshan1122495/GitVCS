@@ -1,3 +1,4 @@
+//PRtest
 public class CaseTriggerHandler {
     public static void updateAccountDescription(List<Case> caseList, Map<Id, Case> caseMap){
         Set<Id> ids = new Set<id>();
@@ -8,6 +9,10 @@ public class CaseTriggerHandler {
                 case1.add(css);
             }
         }
+<<<<<<< HEAD
+        
+=======
+>>>>>>> Test/BugFix
         Map<Id, Account> accountMap2 = new Map<Id, Account>([select id, description from account where id in:ids]);
             
         List<Account> newAcc = new List<Account>();            
@@ -23,7 +28,7 @@ public class CaseTriggerHandler {
             update newAcc;
         }
     }
-    
+    //updateRating
     public static void updateAccountRating(List<Case> caseList, Map<Id, Case> caseMap){
         Set<Id> ids = new Set<Id>();
         for(Case css:caselist){
