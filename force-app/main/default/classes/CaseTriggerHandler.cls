@@ -8,7 +8,7 @@ public class CaseTriggerHandler {
                 case1.add(css);
             }
         }
-        //List<Account> accs = [select id, description from account where id in:ids];
+        
         Map<Id, Account> accountMap = new Map<Id, Account>([select id, description from account where id in:ids]);
             
         List<Account> newAcc = new List<Account>();            
